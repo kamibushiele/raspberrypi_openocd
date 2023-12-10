@@ -2,13 +2,13 @@
 
 # Copyright (C) 2020 by Tarek BOUCHKATI <tarek.bouchkati@gmail.com>
 
-on: workflow_dispatch
+on: [push, orkflow_dispatch]
 
 name: OpenOCD Snapshot
 
 jobs:
   package:
-    runs-on: [ubuntu-18.04]
+    runs-on: [ubuntu-20.04]
     env:
       DL_DIR: ../downloads
       BUILD_DIR: ../build
